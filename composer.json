@@ -1,0 +1,33 @@
+{
+    "name": "halnique/cloud-build-sample",
+    "description": "Sample PHP application for Google Cloud Build",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "halnique",
+            "email": "shunsuke4dev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3.11"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4"
+    },
+    "autoload": {
+        "psr-4": {
+            "Halnique\\CloudBuildSample\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "HalniqueTest\\CloudBuildSample\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "./vendor/bin/phpunit"
+        ]
+    }
+}
